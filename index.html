@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>DEP-Wall Example</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <style>
+        
+        .dep-wall .brick {            
+            margin-bottom:10px;
+        }
+        
+        .dep-wall .column .brick {            
+            width:100%;
+        }
+        
+        .dep-wall .brick img {
+            max-width:100%;
+            height:auto;
+        }
+        
+    </style>
+  </head>
+  
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">DEP-Wall Example</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>DEP-Wall</h1>
+        <p>This is a jQuery plugin that will turn a collection of images into an Instagram type wall.</p>
+        <!-- <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p> -->
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row dep-wall">
+        <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 brick">
+          <img src="http://placehold.it/550x450">
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 brick">
+          <img src="http://placehold.it/350x350">
+       </div>
+        <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 brick">
+          <img src="http://placehold.it/450x450">
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 brick">
+          <img src="http://placehold.it/350x450">
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 brick">
+          <img src="http://placehold.it/450x350">
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 brick">
+          <img src="http://placehold.it/550x350">
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 brick">
+          <img src="http://placehold.it/450x450">
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 brick">
+          <img src="http://placehold.it/550x450">
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 brick">
+          <img src="http://placehold.it/350x350">
+       </div>
+        <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 brick">
+          <img src="http://placehold.it/450x450">
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 brick">
+          <img src="http://placehold.it/350x450">
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 brick">
+          <img src="http://placehold.it/450x350">
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 brick">
+          <img src="http://placehold.it/550x350">
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 brick">
+          <img src="http://placehold.it/450x450">
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>&copy; Company 2014</p>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    
+    <!-- Load the DEP Wall Plugin -->
+    <script src="plugin-dep-wall.js"></script>
+    
+    <script type="text/javascript">
+    
+       $( document ).ready( function() {
+          
+          $('.dep-wall').depWall( { brick: 'brick', maxWidth: 300, minColumns: 2 } ); 
+           
+       });
+       
+    </script>
+    
+  </body>
+</html>
