@@ -1,12 +1,19 @@
+# DEP-Wall
 
+DEP-Wall is a small jQuery plugin used with Bootstrap to build a Instagram type wall.
 
-This is how you initialize the plugin:
+## Initialization ##
 
-*** CODE ***
-
+```
 jQuery(document).ready( function() {	
-	depWallInit( '#dep-wall', '.brick', 400, 2, 'up'  );				
+	$( '.dep-wall' ).depWall( options );				
 });
+```
 
-*** END CODE ***
+## Options ##
+
+* brick : the string selector for the brick objects you want in your wall
+* maxWidth : the maximum width ( in pixels ) for each column
+* minColumns : the minimum number of columns in your wall
+
 
